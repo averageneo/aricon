@@ -5,12 +5,12 @@ You have to install <b>Bash</b>, <b>Zenity</b> and <b>FFmpeg</b>.
 # Installation
 # ScreenShots
 ![alt tag](http://hosseinws.ir/aricon/aricon/6.jpg "Aricon")
-<br>
+<hr>
 Aricon in right click menu:
-<br>
+<hr>
 ![alt tag](http://hosseinws.ir/aricon/aricon/1.jpg "Aricon")
 <br>
-Aricon in right click menu:
+Aricon Codecs:
 <br>
 ![alt tag](http://hosseinws.ir/aricon/aricon/2.jpg "Aricon")
 ![alt tag](http://hosseinws.ir/aricon/aricon/3.jpg "Aricon")
