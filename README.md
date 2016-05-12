@@ -9,11 +9,17 @@ You have to install <b>Bash</b>, <b>Zenity</b> and <b>FFmpeg</b>.
 Aricon in right click menu:
 <hr>
 ![alt tag](http://hosseinws.ir/aricon/aricon/1.jpg "Aricon")
-<br>
+<hr>
 Aricon Codecs:
-<br>
+<hr>
 ![alt tag](http://hosseinws.ir/aricon/aricon/2.jpg "Aricon")
+<hr>
+Aricon output name entry:
+<hr>
 ![alt tag](http://hosseinws.ir/aricon/aricon/3.jpg "Aricon")
+<hr>
+Aricon error for existing file:
+<hr>
 ![alt tag](http://hosseinws.ir/aricon/aricon/4.jpg "Aricon")
 ![alt tag](http://hosseinws.ir/aricon/aricon/5.jpg "Aricon")
 
