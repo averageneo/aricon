@@ -11,6 +11,8 @@ wget https://github.com/hossein4heydari/aricon/blob/master/Aricon.zip
 unzip Aricon.zip
 sh install.sh
 </pre>
+# Video
+See how it works in this video: https://www.youtube.com/watch?v=IxSu4Pnwnko&feature=youtu.be
 # ScreenShots
 ![alt tag](http://hosseinws.ir/aricon/aricon/6.jpg "Aricon")
 <hr>
