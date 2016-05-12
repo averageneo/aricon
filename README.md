@@ -27,3 +27,5 @@ Aricon converting:
 <hr>
 ![alt tag](http://hosseinws.ir/aricon/aricon/5.jpg "Aricon")
 
+# Credits
+Aricon has been written by Hossein Heydari, if you have any advise to make this application better you can send me: hossein7heydari@gmail.com
