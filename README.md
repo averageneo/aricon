@@ -29,3 +29,6 @@ Aricon converting:
 
 # Credits
 Aricon has been written by Hossein Heydari, if you have any advise to make this application better you can send me: hossein7heydari@gmail.com
+
+# License
+GNU Public License
