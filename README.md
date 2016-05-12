@@ -3,6 +3,14 @@ Aricon is a simple graphical converter that works in Nautilus right click menu, 
 # Dependencies
 You have to install <b>Bash</b>, <b>Zenity</b> and <b>FFmpeg</b>.
 # Installation
+Enter following commands in Terminal:
+
+<code>
+cd /tmp
+wget https://github.com/hossein4heydari/aricon/blob/master/Aricon.zip
+unzip Aricon.zip
+sh install.sh
+</code>
 # ScreenShots
 ![alt tag](http://hosseinws.ir/aricon/aricon/6.jpg "Aricon")
 <hr>
