@@ -7,8 +7,9 @@ Enter following commands in Terminal:
 
 <pre>
 cd /tmp
-wget https://github.com/hossein4heydari/aricon/blob/master/Aricon.zip
-unzip Aricon.zip
+wget https://github.com/hossein4heydari/aricon/archive/master.zip
+unzip master.zip
+cd ~/aricon-master
 sh install.sh
 </pre>
 # Video
