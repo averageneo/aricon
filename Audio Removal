@@ -24,7 +24,7 @@ done
 
 for input in "$1"; do
 	remove_Format="$( echo "$input" | rev | cut -f 2- -d '.' | rev )"
-	$terminal -e "ffmpeg -i "$input" -an -c copy "$remove_Format"[NEW].mp4"
+	$terminal -e "ffmpeg -i "$input" -vn -acodec libmp3lame "$remove_Format"[NEW].mp3"
 	time_date="$( date )"
 	hear="$( pwd )"
 	echo $div >> ~/.arihis
