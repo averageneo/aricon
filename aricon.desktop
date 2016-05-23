@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Aricon
+GenericName=Converter
+Type=Application
+Version=2.0
+Comment=A simple shell for FFmpeg
+Path=/home/hossein/.Aricon/
+Exec=aricon
+Icon=/usr/share/icons/ffmpeg.png
+Terminal=false
+StartupNotify=true
+Categories=GNOME;AudioVideo;Video

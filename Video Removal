@@ -15,6 +15,7 @@
 
 div=====================================
 
+
 #select terminal
 for terminal in $TERMINAL x-terminal-emulator gnome-terminal xfce4-terminal lxterminal konsole mate-terminal urxvt rxvt terminator Eterm aterm roxterm termite xterm ; do
     if command -v $terminal > /dev/null 2>&1; then
@@ -24,7 +25,7 @@ done
 
 for input in "$1"; do
 	remove_Format="$( echo "$input" | rev | cut -f 2- -d '.' | rev )"
-	$terminal -e "ffmpeg -i "$input" -an -c copy "$remove_Format"[NEW].mp4"
+	$terminal -e "ffmpeg -i "$input" -vn -acodec libmp3lame "$remove_Format"[NEW].mp3"
 	time_date="$( date )"
 	hear="$( pwd )"
 	echo $div >> ~/.arihis
@@ -34,3 +35,4 @@ for input in "$1"; do
 	echo "Input File Size: "$insize"" >> ~/.arihis
 	echo $div >> ~/.arihis
 done
+
