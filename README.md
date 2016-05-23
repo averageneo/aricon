@@ -44,6 +44,18 @@ Aricon error for existing file:
 ![alt tag](http://hosseinws.ir/aricon/aricon/4.jpg "Aricon")
 <hr>
 
+
+# Aricon History
+
+You can see your works by using this command:
+<pre>
+arihis
+</pre>
+You can clear history by this command:
+<pre>
+clear-arihis
+</pre>
+
 # Credits
 Aricon has been written by Hossein Heydari, if you have any advice to make this application better you can send me: hossein7heydari@gmail.com
 
