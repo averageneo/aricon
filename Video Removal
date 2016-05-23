@@ -25,11 +25,11 @@ done
 
 for input in "$1"; do
 	remove_Format="$( echo "$input" | rev | cut -f 2- -d '.' | rev )"
-	$terminal -e "ffmpeg -i "$input" -vn -acodec libmp3lame "$remove_Format"[NEW].mp3"
+	$terminal -e "ffmpeg -i "$input" -an -c copy "$remove_Format"[NEW].mp4"
 	time_date="$( date )"
 	hear="$( pwd )"
 	echo $div >> ~/.arihis
-	echo "Audio Removal" >> ~/.arihis
+	echo "Video Removal" >> ~/.arihis
 	echo "Started Converting At: $time_date" >> ~/.arihis
 	echo "Input File: "$hear"/"$input"" >> ~/.arihis
 	echo "Input File Size: "$insize"" >> ~/.arihis
