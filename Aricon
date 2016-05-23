@@ -1,0 +1,105 @@
+#!/bin/bash
+
+#
+#	Writter Name: Hossein Heydari
+#	
+#	Follow Me On Twitter: @hossein7heydari
+#
+#	Follow Me On GitHub: @hossien4heydari
+#
+#	Email Address: hossein7heydari@gmail.com 
+#
+#	My Website: http://hosseinws.ir
+#
+
+# vars
+Icon=~/.Aricon/Aricon-files/ffmpeg.png
+Notify_sound=~/.Aricon/Aricon-files/notify.wav
+div=====================================
+
+
+
+# Codec names
+MPEG2="mpeg2video"
+X265="libx265"
+X264="libx264"
+
+# Zenity for codec
+codec=$(zenity --title "Aricon" --window-icon "$Icon" --width 500 --height 250 --list --text "Choose your codec." --radiolist --column "Select" --column "Codecs" TRUE "$X265" FALSE "$X264" FALSE "$MPEG2" FALSE "copy" );
+
+if [ "$?" = 1 ];
+	then exit;
+fi
+
+
+
+
+# Output name and check if it's empty
+while [ true ]; do
+	outname=$(zenity --entry --window-icon "$Icon" --title="Aricon" --text="Please choose your output name." )
+		if [ $? = 1 ];
+			then exit;
+		fi
+	if [ "$outname" = "" ];
+		then
+			notify-send -i $Icon "You have to choose output name." &
+			continue
+		else
+			break
+	fi
+done
+		
+
+if [ "$?" = 1 ];
+	then exit;
+fi
+
+# Zenity for output format
+format=$(zenity --title "Aricon" --window-icon "$Icon" --width 550 --height 300 --list --text "Choose your output format." --radiolist --column "Select" --column "Codecs" TRUE "mp4" FALSE "mkv" FALSE "mov" FALSE "avi" FALSE "wmv" );
+
+if [ "$?" = 1 ];
+	then exit;
+fi
+
+# chek that the file does not exist
+if [[ -f ./"$outname"."$format" ]]; then
+	zenity --error --title "Aricon" --text "The file already exists, change the output name." --window-icon "$Icon" --width 400 --height 100
+	if [ "$?" = 1 ];
+		then exit;
+	fi
+	exit
+fi
+
+#select terminal
+for terminal in $TERMINAL x-terminal-emulator gnome-terminal xfce4-terminal lxterminal konsole mate-terminal urxvt rxvt terminator Eterm aterm roxterm termite xterm ; do
+    if command -v $terminal > /dev/null 2>&1; then
+        break
+    fi
+done
+
+# Start the Converting job
+for video in "$1"
+do
+	/usr/bin/canberra-gtk-play --volume 12 -f $Notify_sound &
+	$terminal -e "ffmpeg -i "$video" -c:v "$codec" -c:a copy "$outname"."$format""
+	
+
+	# Aricon History
+	insize="$( du -sh ./$video | cut -f1 )"
+	outfile="$outname"."$format"
+	time_date="$( date )"
+	hear="$( pwd )"
+	echo $div >> ~/.arihis
+	echo "Started Converting At: $time_date" >> ~/.arihis
+	echo "Input File: "$hear"/"$video"" >> ~/.arihis
+	echo "Output File: "$hear"/"$outfile"" >> ~/.arihis
+	echo "Input File Size: "$insize"" >> ~/.arihis
+	echo "video Codec Changed To: "$codec"" >> ~/.arihis
+	echo $div >> ~/.arihis
+
+done 
+ 
+
+
+
+
