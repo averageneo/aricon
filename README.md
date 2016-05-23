@@ -7,6 +7,8 @@ Aricon is a simple graphical converter with other features that works in Nautilu
 4. You can Remove video from a video file and keep sound by just two clicks!
 5. You can Remove audio from a video file and keep video without sound by just two clicks!
 6. ....
+
+
 # Dependencies
 <b>Zenity</b> and <b>FFmpeg</b> will be installed with running "install.sh" script.
 # Installation
