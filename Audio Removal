@@ -1,0 +1,36 @@
+#!/bin/bash
+
+
+#
+#	Writter Name: Hossein Heydari
+#	
+#	Follow Me On Twitter: @hossein7heydari
+#
+#	Follow Me On GitHub: @hossien4heydari
+#
+#	Email Address: hossein7heydari@gmail.com 
+#
+#	My Website: http://hosseinws.ir
+#
+
+div=====================================
+
+#select terminal
+for terminal in $TERMINAL x-terminal-emulator gnome-terminal xfce4-terminal lxterminal konsole mate-terminal urxvt rxvt terminator Eterm aterm roxterm termite xterm ; do
+    if command -v $terminal > /dev/null 2>&1; then
+        break
+    fi
+done
+
+for input in "$1"; do
+	remove_Format="$( echo "$input" | rev | cut -f 2- -d '.' | rev )"
+	$terminal -e "ffmpeg -i "$input" -an -c copy "$remove_Format"[NEW].mp4"
+	time_date="$( date )"
+	hear="$( pwd )"
+	echo $div >> ~/.arihis
+	echo "Audio Removal" >> ~/.arihis
+	echo "Started Converting At: $time_date" >> ~/.arihis
+	echo "Input File: "$hear"/"$input"" >> ~/.arihis
+	echo "Input File Size: "$insize"" >> ~/.arihis
+	echo $div >> ~/.arihis
+done
