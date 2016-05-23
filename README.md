@@ -1,7 +1,14 @@
 # Aricon
-Aricon is a simple graphical converter that works in Nautilus right click menu, this application has been written with Bash and Zenity under FFmpeg.
+Aricon is a simple graphical converter with other features that works in Nautilus and Nemo right click menu, this application has been written with Bash and Zenity under FFmpeg engine.
+# Features
+1. You have a history file.
+2. You can convert in right click menu.
+3. You can also use it's Desktop Application.
+4. You can Remove video from a video file and keep sound by just two clicks!
+5. You can Remove audio from a video file and keep video without sound by just two clicks!
+6. ....
 # Dependencies
-You have to install <b>Bash</b>, <b>Zenity</b> and <b>FFmpeg</b>.
+<b>Zenity</b> and <b>FFmpeg</b> will be installed with running "install.sh" script.
 # Installation
 Enter following commands in Terminal:
 
@@ -34,9 +41,6 @@ Aricon error for existing file:
 <hr>
 ![alt tag](http://hosseinws.ir/aricon/aricon/4.jpg "Aricon")
 <hr>
-Aricon converting:
-<hr>
-![alt tag](http://hosseinws.ir/aricon/aricon/5.jpg "Aricon")
 
 # Credits
 Aricon has been written by Hossein Heydari, if you have any advice to make this application better you can send me: hossein7heydari@gmail.com
