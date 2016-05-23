@@ -22,6 +22,7 @@ both () {
 	sudo chmod +rwx /usr/local/bin/clear-arihis
 	sudo cp aricon.desktop /usr/share/applications
 	sudo chmod +rwx /usr/share/applications/aricon.desktop
+	sudo cp ./ffmpeg.png /usr/share/icons
 
 }
 nautilus () {
@@ -42,6 +43,7 @@ nautilus () {
 	sudo chmod +rwx /usr/local/bin/clear-arihis
 	sudo cp aricon.desktop /usr/share/applications
 	sudo chmod +rwx /usr/share/applications/aricon.desktop
+	sudo cp ./ffmpeg.png /usr/share/icons
 }
 nemo () {
 	mkdir ~/.Aricon
@@ -61,6 +63,8 @@ nemo () {
 	sudo chmod +rwx /usr/local/bin/clear-arihis
 	sudo cp aricon.desktop /usr/share/applications
 	sudo chmod +rwx /usr/share/applications/aricon.desktop
+	sudo cp ./ffmpeg.png /usr/share/icons
+
 }
 
 Arch () {
