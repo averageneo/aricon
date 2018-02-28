@@ -86,7 +86,7 @@ sleep 1
 while [ true ]
 do
 	sleep 1
-	read -p "What is your distro? {(A)rch, (D)ebian, (F)edora}" distro
+	read -p "What is your distro? {(A)rch, (D)ebian, (F)edora}: " distro
 	if [ "$distro" = "A" ]; then
 		Arch
 		break
@@ -104,14 +104,14 @@ done
 while [ true ]
 do
 	sleep 1
-	read -p "Whats your file manager? (nemo/nautilus/both) " fm
-	if [ "$fm" = "nemo" ]; then
+	read -p "What is your file manager? {(N)emo, n(A)utilus, (B)oth}: " fm
+	if [ "$fm" = "N" ]; then
 		nemo
 		break
-	elif [ "$fm" = "nautilus" ]; then
+	elif [ "$fm" = "A" ]; then
 		nautilus
 		break
-	elif [ "$fm" = "both" ]; then
+	elif [ "$fm" = "B" ]; then
 		both
 		break
 	else
