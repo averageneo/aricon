@@ -76,18 +76,25 @@ Debian () {
 	sudo apt-get update
 	sudo apt-get install ffmpeg
 }
+Fedora () {
+	sudo dnf install zenity ffmpeg
+}
+
 color='\033[0;36m'
 echo -e "\n ${color}------ This is Aricon Installer ------"
 sleep 1
 while [ true ]
 do
 	sleep 1
-	read -p "Your distro  is Arch-based or Debian-based? (A/D) " distro
+	read -p "What is your distro? {(A)rch, (D)ebian, (F)edora}" distro
 	if [ "$distro" = "A" ]; then
 		Arch
 		break
 	elif [ "$distro" = "D" ]; then
 		Debian
+		break
+	elif [ "$distro" = "F" ]; then
+		Fedora
 		break
 	else
 		continue	
