@@ -23,34 +23,7 @@ sh install.sh
 </pre>
 # Video
 See how it works in this video: https://www.youtube.com/watch?v=IxSu4Pnwnko&feature=youtu.be
-# ScreenShots
-![alt tag](http://hosseinws.ir/aricon/aricon/6.jpg "Aricon")
-<hr>
-Aricon in right click menu:
-<hr>
-![alt tag](http://hosseinws.ir/aricon/aricon/1.jpg "Aricon")
-<hr>
-Aricon output name entry:
 
-<hr>
-![alt tag](http://hosseinws.ir/aricon/aricon/2.jpg "Aricon")
-<hr>
-Aricon Codecs:
-<hr>
-![alt tag](http://hosseinws.ir/aricon/aricon/3.jpg "Aricon")
-<hr>
-Aricon error for existing file:
-<hr>
-![alt tag](http://hosseinws.ir/aricon/aricon/4.jpg "Aricon")
-<hr>
-And more ....
-<hr>
-![alt tag](http://hosseinws.ir/aricon/aricon/8.jpg "Aricon")
-<hr>
-![alt tag](http://hosseinws.ir/aricon/aricon/7.jpg "Aricon")
-<hr>
-![alt tag](http://hosseinws.ir/aricon/aricon/9.jpg "Aricon")
-<hr>
 # Aricon History
 
 You can see your works by using this command:
@@ -62,8 +35,6 @@ You can clear history by this command:
 clear-arihis
 </pre>
 
-# Credits
-Aricon has been written by Hossein Heydari, if you have any advice to make this application better you can send me: hossein7heydari@gmail.com
 
 # License
 GNU Public License
